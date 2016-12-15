@@ -6,3 +6,15 @@ test:
   override:
     - npm run lint
     - npm run test
+
+deployment:
+  staging:
+    branch: staging
+    heroku:
+      appname: jetfuel-staging
+
+deployment:
+  production:
+    branch: master
+    heroku:
+      appname: jetfuel-production
